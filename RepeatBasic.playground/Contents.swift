@@ -2,4 +2,6 @@ import UIKit
 
 // Словари
 
-let nameDict = ["Иван": 10, "Максим": 20]
+var nameDict = ["Иван": 10, "Максим": 20]
+nameDict["Кирилл"] = 30
+print(nameDict)
