@@ -17,3 +17,9 @@ setOne.insert(4)
 print(setOne)
 
 
+var set_1: Set = [1,2,3,4]
+var set_2: Set = [1,2,5,6,7,8,9]
+
+var commonSet = set_1.union(set_2).sorted()
+
+
