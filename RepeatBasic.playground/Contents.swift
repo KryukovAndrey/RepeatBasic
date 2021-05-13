@@ -246,5 +246,68 @@ checkFuel()
 
 
 
+// Classes
+
+class Human {
+    
+    var name = "Ivan"
+    var age: Int? = 30
+    var hairs = true
+    
+    func description(){
+        if let humanAge = age {
+            print("Hello! My name is \(name) and i'am \(humanAge) years old")
+        } else {
+            print("Hello! My name is \(name)")
+        }
+    }
+}
+
+let humanOne = Human()
+humanOne.name = "Igor"
+humanOne.description()
+
+let humanTwo = Human()
+humanTwo.name = "Pavel"
+humanTwo.hairs = false
+humanTwo.age = 50
+
+var arrayHumans = [Human]()
+arrayHumans.append(humanOne)
+arrayHumans.append(humanTwo)
+arrayHumans
+
+
+class car {
+    
+    var mark: String
+    var color: String?
+    var price: Int
+    
+    func description() {
+        guard let carColor = color else {
+            print("\(mark) cost is \(price)$")
+            return
+        }
+        print("\(mark) have \(carColor) and cost is \(price)$")
+    }
+    
+    init(mark: String, color: String?, price: Int) {
+        self.mark = mark
+        self.color = color
+        self.price = price
+    }
+}
+
+var bmw = car(mark: "BMW", color: "Black", price: 10000)
+var audi = car(mark: "AUDI", color: nil, price: 15000)
+
+bmw.description()
+audi.description()
+
+
+
+
+
 
 
