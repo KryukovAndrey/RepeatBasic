@@ -26,7 +26,7 @@ var commonSet = set_1.intersection(set_2)
 
 
 
-// Работаю с guard
+// Guard
 
 var arg1 = 10
 var arg2 = 10
@@ -40,3 +40,41 @@ func calc(a: Int, b: Int){
 }
 
 calc(a: arg1, b: arg2)
+
+
+//for i in 1...5 {
+//    guard i != 3 else {continue}
+//    print("i = \(i)")
+//}
+
+for i in 1...5 {
+//    if i != 3 {
+//        print("i = \(i)")
+//    }
+    
+    if i == 3 {
+        print("i = \(i)!!!!!!!")
+        continue
+    }
+    print("i = \(i)")
+}
+
+
+
+
+// Switch
+
+var totalScore = 100
+
+switch totalScore {
+case 10:
+    print("You are not jedi")
+case 20:
+    print("You are still not jedi")
+case 50..<100:
+    print("You are almost jedi")
+case 100:
+    print("You are jedi!")
+default:
+    print("break")
+}
