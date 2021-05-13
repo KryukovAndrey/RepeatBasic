@@ -26,4 +26,17 @@ var commonSet = set_1.intersection(set_2)
 
 
 
-//Работаю со множествами №1
+// Работаю с guard
+
+var arg1 = 10
+var arg2 = 10
+
+func calc(a: Int, b: Int){
+    
+    guard a == b else {return}
+    guard a >= b else {return}
+    
+    print("a >= b")
+}
+
+calc(a: arg1, b: arg2)
