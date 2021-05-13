@@ -60,6 +60,8 @@ rect.volume
 class Person {
     var name: String
     var secondName: String
+    class var legs: Int {return 2}
+    class var arms: Int {return 2}
     
     var fullName: String {
         get {
@@ -80,3 +82,10 @@ class Person {
 }
 
 var elena = Person(name: "Elena", secondName: "Tolstopiatova")
+elena.fullName
+elena.fullName = "Elena Kryukova"
+elena.name
+elena.secondName
+
+let elenaLegs = Person.legs
+
