@@ -78,3 +78,19 @@ case 100:
 default:
     print("break")
 }
+
+
+
+
+
+
+
+// For in
+
+var array = [1,2,3,4,5]
+
+for i in array {
+    print("array[i] = \(i)")
+}
+
+array[3]
