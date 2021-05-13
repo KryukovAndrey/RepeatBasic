@@ -189,8 +189,38 @@ let sortedArray = unsortedArray.sorted {
 
 
 
+// Кортежи
+
+let one = 1
+let two = 2
+let three = 3
+
+let numbers = (one, two, three)
+
+let boy = (5, "Sergey")
+boy.0
+boy.1
+
+let greenPencil = (color: "Green", length: 5, weight: 20)
+greenPencil.color
+greenPencil.length
+greenPencil.weight
+let (greenColor, greenLength, greenWeight) = greenPencil
+greenColor
 
 
+var age = 0
+var name = ""
 
+let agesAndeNames = ["Max" : 10, "Alex" : 40, "Mark" : 30]
 
+for (nameInD, ageInD) in agesAndeNames {
+    if ageInD > age {
+        age = ageInD
+        name = nameInD
+    }
+}
+
+age
+name
 
