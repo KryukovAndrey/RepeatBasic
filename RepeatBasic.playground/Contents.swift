@@ -128,6 +128,24 @@ print("Start!")
 
 
 
+// Сложная функция (ф-ция в качестве возвращаемого аргумента)
+
+func whatToDo(missed: Bool) -> (Int) -> Int {
+    func missCountUp(input: Int) -> Int {return input + 1}
+    func missCountDown(input: Int) -> Int {return input - 1}
+    
+    return missed ? missCountUp : missCountDown
+}
+
+var missed = 0
+missed = whatToDo(missed: true)(missed)
+missed = whatToDo(missed: true)(missed)
+missed = whatToDo(missed: false)(missed)
+
+
+
+
+
 
 
 
