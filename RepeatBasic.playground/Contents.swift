@@ -146,6 +146,50 @@ missed = whatToDo(missed: false)(missed)
 
 
 
+// closure
+
+let closure = {
+    print("Hello World!")
+}
+
+// 1
+func repeatThreeTimes(closure: () -> ()){
+    for _ in 0...2 {
+        closure()
+    }
+}
+
+// 2
+repeatThreeTimes(closure: closure)
+
+// 3
+repeatThreeTimes(closure: {
+    print("Hello World!")
+})
+
+// 4
+repeatThreeTimes(closure: {
+    () -> () in
+    print("Hello World!")
+})
+
+// 5
+repeatThreeTimes {
+    () -> () in
+    print("Hello World!")
+}
+
+// 6
+let unsortedArray = [2, 33, 100, 0, -50, 999]
+let sortedArray = unsortedArray.sorted {
+    (number1: Int, number2: Int) -> Bool in
+    return number1 < number2
+}
+
+
+
+
+
 
 
 
