@@ -94,3 +94,41 @@ for i in array {
 }
 
 array[3]
+
+
+
+
+// While - пока
+
+var timer = 5
+print("Couting down")
+
+//Цикл выполняется всегда, если условие верно, т.е. сначало проверяется условие, потом выполняется цикл
+while timer > 0 {
+    print(timer)
+    timer -= 1
+}
+
+print("Start!")
+
+
+var timer_1 = 5
+print("Couting down")
+
+//Сначало выполняется цикл, а потом выполняется проверка
+repeat {
+    print(timer_1)
+    timer_1 -= 1
+} while timer_1 > 0
+
+print("Start!")
+
+
+
+
+
+
+
+
+
+
