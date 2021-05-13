@@ -34,6 +34,7 @@ class Child: Human {
 var ivan = Child(toy: "Hummer", name: "Ivan")
 ivan.description()
 
+// тест
 
 
 
