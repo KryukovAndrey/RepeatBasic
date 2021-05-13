@@ -224,3 +224,27 @@ for (nameInD, ageInD) in agesAndeNames {
 age
 name
 
+
+
+// Опционалы
+
+var fuel: Int?
+fuel = nil
+
+func checkFuel() {
+    guard let yesFuel = fuel else {
+        print("no fuel data available")
+        return
+    }
+    print("fuel = \(yesFuel) liters")
+}
+
+checkFuel()
+
+
+
+
+
+
+
+
