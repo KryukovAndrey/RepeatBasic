@@ -134,3 +134,5 @@ enum Movement: Int {
 let num = Movement.backward.rawValue
 let num1 = Movement.backward.rawValue
 let num2 = Movement.backward.rawValue
+let num3 = Movement.backward.rawValue
+
