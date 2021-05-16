@@ -132,5 +132,4 @@ enum Movement: Int {
 }
 
 let num = Movement.backward.rawValue
-
-let str: String?
+let num1 = Movement.backward.rawValue
